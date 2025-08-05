@@ -2685,3 +2685,69 @@ a:hover {
 #nav a:hover {
   color: #cccccc;
 }
+/* === ARCHWAY CUSTOM BLACK & WHITE THEME === */
+
+/* Global body styles */
+body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Section background overrides */
+#main section,
+#main section.dark,
+section {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Link color (default and hover) */
+a,
+a:visited {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+a:hover {
+  color: #cccccc !important;
+}
+
+/* Navigation menu links */
+#nav a,
+#nav a:visited {
+  color: #ffffff !important;
+}
+#nav a:hover {
+  color: #cccccc !important;
+}
+
+/* Buttons */
+.button,
+.button:visited {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+}
+.button:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #ffffff !important;
+}
+
+/* Fix the background video to actually be in back */
+#bg-video {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Ensure text contrasts against video */
+.cover header h2,
+.cover header p {
+  color: #ffffff !important;
+}
