@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Prologue by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 <head>
-  <title>Prologue by HTML5 UP</title>
+  <title>Archway Productions</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -14,12 +14,7 @@
 
 <body class="is-preload">
 
-  <!-- ✅ BACKGROUND VIDEO -->
-  <video autoplay muted loop id="bg-video">
-    <source src="assets/video/archway-bg.mp4" type="video/mp4">
-  </video>
-
-  <!-- ✅ HEADER -->
+  <!-- ✅ HEADER SIDEBAR -->
   <div id="header">
     <div class="top">
 
@@ -45,97 +40,101 @@
     </div>
 
     <div class="bottom">
+      <!-- ✅ SOCIAL ICONS -->
+      <ul class="icons">
+        <li><a href="https://www.instagram.com/thisisarchway" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="mailto:alyssa@thisisarchway.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+    </div>
+  </div> <!-- ✅ END HEADER -->
 
-					<!-- Social Icons -->
-						<ul class="icons">
-  <li><a href="https://www.instagram.com/thisisarchway" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-  <li><a href="mailto:alyssa@thisisarchway.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-</ul>
+  <!-- ✅ HERO VIDEO SECTION -->
+  <section id="hero-video" style="position: relative; height: 100vh; overflow: hidden;">
+    <video autoplay muted loop playsinline style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      opacity: 0.7;
+      pointer-events: none;
+    ">
+      <source src="assets/video/archway-bg.mp4" type="video/mp4">
+    </video>
+  </section>
 
+  <!-- ✅ INTRO SECTION -->
+  <section id="intro" class="one dark cover" style="padding: 5em 2em;">
+    <div class="container">
+      <header>
+        <h2 class="alt">
+          <strong>Archway Productions</strong> is building the future of storytelling.
+        </h2>
+        <p>
+          We create bold, handcrafted films and series that speak to a generation left behind by traditional media. This is what’s next.
+        </p>
+      </header>
+    </div>
+  </section>
 
-				</div>
+  <!-- ✅ MAIN CONTENT -->
+  <div id="main">
 
-			</div>
+    <!-- ✅ OUR WORK SECTION -->
+    <section id="projects">
+      <h2>Our Work</h2>
 
-		<!-- Main -->
-			<div id="main">
+      <h3>Boss Babe</h3>
+      <p>A dark, character-driven pilot about girlboss culture, ambition, and bodily autonomy. Think <em>Severance</em> meets <em>Black Swan</em>, but for Gen Z.</p>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+      <h3>Leaping</h3>
+      <p>A feel-good, time-hopping indie feature about love, loss, and learning to leap before you're ready. Uplifting, heartfelt, and weird in the best way.</p>
 
-<header>
-  <h2 class="alt"><strong>Archway Productions</strong> is building the future of storytelling.</h2>
-  <p>We create bold, handcrafted films and series that speak to a generation left behind by traditional media. This is what’s next.</p>
-</header>
+      <h3>+ More Coming Soon</h3>
+      <p>We're developing a bold slate of handcrafted, genre-bending stories that reject the formula and speak to a new generation of viewers.</p>
+    </section>
 
+    <!-- ✅ ABOUT SECTION -->
+    <section id="about">
+      <h2>About Archway</h2>
+      <p>
+        Archway Productions is an independent production company building the future of storytelling.
+        We make handcrafted, micro-to-mid budget films and series that challenge norms, celebrate underrepresented voices,
+        and refuse to be boring. Run by a Gen Z founder, Archway exists to fill the gap the traditional industry keeps ignoring —
+        and prove that originality is not just sustainable, but essential.
+      </p>
+    </section>
 
-							<footer>
-<a href="#projects" class="button scrolly">See Our Work</a>
-							</footer>
+    <!-- ✅ CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Let’s build something bold together.</p>
+      <ul class="icons">
+        <li><a href="mailto:alyssa@thisisarchway.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        <li><a href="https://instagram.com/archway.productions" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+      </ul>
+    </section>
 
-						</div>
-					</section>
+  </div> <!-- ✅ End #main -->
 
-				<!-- Portfolio -->
-					<section id="projects">
-  <h2>Our Work</h2>
-  <h3>Boss Babe</h3>
-  <p>A dark, character-driven pilot about girlboss culture, ambition, and bodily autonomy. Think <em>Severance</em> meets <em>Black Swan</em>, but for Gen Z.</p>
+  <!-- ✅ FOOTER -->
+  <div id="footer">
+    <ul class="copyright">
+      <li>&copy; Archway Productions. All rights reserved.</li>
+      <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </div>
 
-  <h3>Leaping</h3>
-  <p>A feel-good, time-hopping indie feature about love, loss, and learning to leap before you're ready. Uplifting, heartfelt, and weird in the best way.</p>
+  <!-- ✅ SCRIPTS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 
-  <h3>+ More Coming Soon</h3>
-  <p>We're developing a bold slate of handcrafted, genre-bending stories that reject the formula and speak to a new generation of viewers.</p>
-</section>
-
-				<!-- About Me -->
-					<section id="about">
-  <h2>About Archway</h2>
-  <p>Archway Productions is an independent production company building the future of storytelling. We make handcrafted, micro-to-mid budget films and series that challenge norms, celebrate underrepresented voices, and refuse to be boring. Run by a Gen Z founder, Archway exists to fill the gap the traditional industry keeps ignoring — and prove that originality is not just sustainable, but essential.</p>
-</section>
-
-				<!-- Contact -->
-					<section id="contact">
-						<section id="contact">
-  <h2>Contact</h2>
-  <p>Let’s build something bold together.</p>
-  <ul class="icons">
-    <li><a href="mailto:alyssa@thisisarchway.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-    <li><a href="https://instagram.com/archway.productions" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-  </ul>
-</section>
-
-					
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-
+</body>
 </html>
-
-
-
-
-
-
