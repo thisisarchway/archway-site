@@ -2765,132 +2765,67 @@ a:hover {
   pointer-events: none;
 }
 
-/* Make the sidebar black */
-#header {
-  background-color: #000;
-}
-
-/* Optional: Ensure text/icons contrast properly */
-#header #logo h1,
-#header #logo p,
-#header nav a,
-#header .icons a {
-  color: #fff;
-}
-
-/* Optional: Tweak hover states */
-#header nav a:hover,
-#header .icons a:hover {
-  color: #aaa; /* Or a soft grey/white for hover contrast */
-}
-
-#logo {
-  text-align: center;
-  margin-top: 2em;
-}
-
-#logo img {
-  display: block;
-  margin: 0 auto;
-}
-
-#nav {
-  margin-top: 4em; /* You can increase this to push it down more */
-}
-
-.top {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-}
-
-#header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-}
-
-#header .bottom {
-  text-align: center;
-  margin-bottom: 1.5em;
-}
-
-/* === Always show hamburger icon === */
-.toggle {
-  display: block !important;
-  z-index: 9999;
-  position: fixed;
-  top: 1.5em;
-  left: 1.5em;
-  background: rgba(0, 0, 0, 0.5); /* optional: helps contrast if it overlaps video */
-  padding: 0.75em;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* === Collapse sidebar by default === */
-#page-wrapper.inactive #header {
-  transform: translateX(-250px); /* hides sidebar off screen */
-  transition: transform 0.3s ease;
-}
-
-/* === Sidebar open state === */
-#page-wrapper:not(.inactive) #header {
-  transform: translateX(0);
-}
-
-/* === Prevent giant black section under hero video === */
-#main {
-  margin-left: 0 !important; /* keeps main content visible even if sidebar is collapsed */
-  padding-top: 0 !important;
-}
-
-/* Optional: make sure hero video fills the screen without pushing anything down */
-#banner video {
-  object-fit: cover;
-  height: 100vh;
-  width: 100%;
-}
-/* Hide sidebar by default */
-.sidebar {
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
+/* === Sidebar styles === */
+#sidebar {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
+  width: 275px;
   height: 100%;
-  z-index: 1000;
-  background-color: #000; /* Or whatever your color is */
+  background: #111;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  z-index: 9999;
 }
 
-/* Only show sidebar when toggled */
-.sidebar.active {
-  transform: translateX(0);
+body.sidebar-visible #sidebar {
+  display: block;
 }
 
-/* Show hamburger menu on all screen sizes initially */
-.menu-toggle {
-  display: block !important;
+/* Hide main content behind sidebar when active */
+body.sidebar-visible {
+  overflow: hidden;
+}
+
+/* === Toggle (hamburger) === */
+#toggle {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1100;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10000;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Hide sidebar for large screens unless specifically triggered */
-@media (min-width: 1024px) {
-  .sidebar {
-    transform: translateX(-100%);
-  }
+#toggle span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+}
 
-  .sidebar.active {
-    transform: translateX(0);
+/* Make sure the hamburger is always visible on top */
+@media screen and (min-width: 768px) {
+  #sidebar {
+    display: none !important;
   }
-
-  .menu-toggle {
+  #toggle {
     display: block;
   }
+}
+
+/* === Footer fix === */
+#footer {
+  clear: both;
+  padding: 2rem;
+  background: #111;
+  color: #fff;
+  z-index: 10;
+  position: relative;
 }
