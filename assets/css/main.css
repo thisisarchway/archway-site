@@ -2764,68 +2764,68 @@ a:hover {
   opacity: 0.7;
   pointer-events: none;
 }
+/* Base layout */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: margin-left 0.3s ease;
+}
 
-/* === Sidebar styles === */
+/* Sidebar base state */
 #sidebar {
-  display: none;
+  height: 100%;
+  width: 250px;
   position: fixed;
   top: 0;
+  left: -250px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+}
+
+/* Sidebar open state */
+body.sidebar-open #sidebar {
   left: 0;
-  width: 275px;
-  height: 100%;
-  background: #111;
-  overflow-y: auto;
-  transition: all 0.3s ease;
-  z-index: 9999;
 }
 
-body.sidebar-visible #sidebar {
-  display: block;
+/* Shift the whole body content when sidebar is open */
+body.sidebar-open {
+  margin-left: 250px;
 }
 
-/* Hide main content behind sidebar when active */
-body.sidebar-visible {
-  overflow: hidden;
-}
-
-/* === Toggle (hamburger) === */
-#toggle {
+/* Hamburger button */
+#hamburger {
   position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 10000;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#toggle span {
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 2px;
-}
-
-/* Make sure the hamburger is always visible on top */
-@media screen and (min-width: 768px) {
-  #sidebar {
-    display: none !important;
-  }
-  #toggle {
-    display: block;
-  }
-}
-
-/* === Footer fix === */
-#footer {
-  clear: both;
-  padding: 2rem;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
   background: #111;
   color: #fff;
-  z-index: 10;
-  position: relative;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+/* Optional: make the hamburger hide when sidebar is open (if you want) */
+body.sidebar-open #hamburger {
+  left: 270px;
+}
+
+/* Main content wrapper */
+#main-content {
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+}
+
+/* Footer fix */
+footer {
+  clear: both;
+  margin-top: 60px;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  text-align: center;
 }
