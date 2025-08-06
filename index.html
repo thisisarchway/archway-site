@@ -22,39 +22,7 @@
 
   <div id="page-wrapper">
 
-    <!-- TOGGLE BUTTON (Hamburger icon) -->
-    <a href="#header" class="toggle"></a>
-
-    <!-- SIDEBAR HEADER -->
-    <div id="header" style="z-index: 10000; position: relative; display: flex; flex-direction: column; justify-content: space-between; background: #000; color: #fff;">
-      <div class="top" style="display: flex; flex-direction: column; align-items: center; padding-top: 2em;">
-        <div id="logo" style="text-align: center;">
-          <span class="image logo">
-            <img src="images/logo.png" alt="Archway Productions Logo" style="max-width: 120px; margin: 0 auto;" />
-          </span>
-        </div>
-
-
-        <nav id="nav" style="margin-top: 3em;">
-          <ul style="list-style: none; padding: 0; text-align: center;">
-            <li><a href="#intro">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#shop">Shop</a></li>
-          </ul>
-        </nav>
-      </div>
-
-
-      <div class="bottom" style="padding-bottom: 2em;">
-        <ul class="icons" style="display: flex; justify-content: center; gap: 1em;">
-          <li><a href="https://www.instagram.com/thisisarchway" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="mailto:alyssa@thisisarchway.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- HERO VIDEO SECTION -->
+    <!-- HERO VIDEO SECTION (NOW AT THE TOP) -->
     <section id="hero-video" style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; background: black;">
       <video autoplay muted loop playsinline style="
         position: absolute;
@@ -68,7 +36,39 @@
       ">
         <source src="https://www.dropbox.com/scl/fi/hw4baxg4ky7wlofxq2pdc/archway-bg.mp4?rlkey=6sllswuffe0umxkqsy4jesix3&raw=1" type="video/mp4">
       </video>
+
+      <!-- TOGGLE BUTTON (Hamburger icon) ON TOP OF HERO -->
+      <button id="hamburger" onclick="document.body.classList.toggle('sidebar-open')">
+        ☰
+      </button>
     </section>
+
+    <!-- SIDEBAR HEADER -->
+    <div id="sidebar">
+      <div class="top">
+        <div id="logo">
+          <span class="image logo">
+            <img src="images/logo.png" alt="Archway Productions Logo" />
+          </span>
+        </div>
+
+        <nav id="nav">
+          <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#shop">Shop</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="bottom">
+        <ul class="icons">
+          <li><a href="https://www.instagram.com/thisisarchway" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="mailto:alyssa@thisisarchway.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- INTRO SECTION -->
     <section id="intro" class="one dark cover" style="padding: 5em 2em;">
@@ -128,3 +128,4 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
