@@ -1,27 +1,8 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Archway Productions</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <!-- Load custom font -->
-  <link href="https://fonts.googleapis.com/css2?family=The+Seasons:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    h1, h2 {
-      font-family: 'The Seasons', serif;
-    }
-    body {
-      text-align: center;
-    }
-  </style>
-</head>
-
 <body class="is-preload">
   <div id="page-wrapper" class="inactive">
 
     <!-- Toggle Button (hamburger icon) -->
-    <a href="#header" class="toggle"></a>
+    <button id="hamburger" aria-label="Toggle sidebar">☰</button>
 
     <!-- Sidebar -->
     <div id="header">
@@ -48,72 +29,74 @@
       </div>
     </div>
 
-    <!-- Hero Video Section -->
-    <section id="hero-video" style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; background: black;">
-      <video autoplay muted loop playsinline style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 8px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);">
-        <source src="https://www.dropbox.com/scl/fi/hw4baxg4ky7wlofxq2pdc/archway-bg.mp4?rlkey=6sllswuffe0umxkqsy4jesix3&raw=1" type="video/mp4">
-      </video>
-    </section>
+    <!-- Main content wrapper -->
+    <div id="main-content">
+      <!-- Hero Video Section -->
+      <section id="hero-video" style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden; background: black;">
+        <video autoplay muted loop playsinline style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);">
+          <source src="https://www.dropbox.com/scl/fi/hw4baxg4ky7wlofxq2pdc/archway-bg.mp4?rlkey=6sllswuffe0umxkqsy4jesix3&raw=1" type="video/mp4">
+        </video>
+      </section>
 
-    <!-- Intro Section -->
-    <section id="intro" class="one dark cover" style="padding: 5em 2em;">
-      <div class="container">
-        <header>
-          <h2 class="alt">
-            <strong>Archway Productions</strong> is building the future of storytelling.
-          </h2>
-          <p>We generate and nurture stories that feel both timely and timeless.</p>
-        </header>
+      <!-- Intro Section -->
+      <section id="intro" class="one dark cover" style="padding: 5em 2em;">
+        <div class="container">
+          <header>
+            <h2 class="alt">
+              <strong>Archway Productions</strong> is building the future of storytelling.
+            </h2>
+            <p>We generate and nurture stories that feel both timely and timeless.</p>
+          </header>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>The Archway Way</h2>
+        <section><h2>Where a Classic Medium Meets the Present</h2><p>Founded in 2024, Archway Productions is a project incubator and production company redefining how stories get made, from concept to screen. We specialize in film, television, music visuals, and digital storytelling that taps into the language, urgency, and heartbeat of now.</p></section>
+        <section><h2>Original Voices, Original Visions</h2><p>Archway champions the voices shaping culture in real time. We work with emerging creators, especially from Gen Z and underrepresented communities, to develop art that feels both intimate and seismic. Our mission is to protect originality, nurture new talent, and bring stories to life that reflect the world as it is and as it could be.</p></section>
+        <section><h2>Timely, Yet Timeless</h2><p>Our slate is designed to resonate across generations through emotionally resonant, story-first filmmaking. We embrace the edge, weirdness, and raw feeling of now, while grounding our projects in the timeless cinematic elements that make audiences care. An Archway production is always distinct and always human.</p></section>
+        <section><h2>Funding the Zeitgeist</h2><p>Archway uses a venture arts investment model that invites investors to fund not just projects but vision. By supporting Archway, investors gain access to stories and creators that influence trends, conversations, and cultural behavior as they unfold. We protect creative integrity while offering collaborators a rare window into the pulse of Gen Z, the very audience driving the next wave of global culture.</p></section>
+        <section><h2>Built By the Internet Generation</h2><p>We know the language of the internet. From proven viral crowdfunding strategies to meme-fueled social marketing to creator-led communities, we harness the same platforms that raised us to launch and grow our stories around the world.</p></section>
+        <section><h2>Not Another Sequel</h2><p>Audiences are tired of endless reboots and watered-down IP. Archway exists to fill the gap the industry keeps ignoring: bold, genre-defying, emotionally intelligent storytelling that knows its worth. We believe originality isn’t just essential, it’s good business.</p></section>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Let’s build something bold together.</p>
+        <ul class="icons" style="display: flex; justify-content: center; gap: 1em;">
+          <li><a href="mailto:alyssa@thisisarchway.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          <li><a href="https://instagram.com/archway.productions" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        </ul>
+      </section>
+
+      <!-- Footer -->
+      <div id="footer">
+        <ul class="copyright">
+          <li>&copy; Archway Productions. All rights reserved.</li>
+          <li>The Future Is Not Franchised</li>
+        </ul>
       </div>
-    </section>
+    </div> <!-- End main-content -->
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>The Archway Way</h2>
-      <section><h2>Where a Classic Medium Meets the Present</h2><p>Founded in 2024, Archway Productions is a project incubator and production company redefining how stories get made, from concept to screen. We specialize in film, television, music visuals, and digital storytelling that taps into the language, urgency, and heartbeat of now.</p></section>
-      <section><h2>Original Voices, Original Visions</h2><p>Archway champions the voices shaping culture in real time. We work with emerging creators, especially from Gen Z and underrepresented communities, to develop art that feels both intimate and seismic. Our mission is to protect originality, nurture new talent, and bring stories to life that reflect the world as it is and as it could be.</p></section>
-      <section><h2>Timely, Yet Timeless</h2><p>Our slate is designed to resonate across generations through emotionally resonant, story-first filmmaking. We embrace the edge, weirdness, and raw feeling of now, while grounding our projects in the timeless cinematic elements that make audiences care. An Archway production is always distinct and always human.</p></section>
-      <section><h2>Funding the Zeitgeist</h2><p>Archway uses a venture arts investment model that invites investors to fund not just projects but vision. By supporting Archway, investors gain access to stories and creators that influence trends, conversations, and cultural behavior as they unfold. We protect creative integrity while offering collaborators a rare window into the pulse of Gen Z, the very audience driving the next wave of global culture.</p></section>
-      <section><h2>Built By the Internet Generation</h2><p>We know the language of the internet. From proven viral crowdfunding strategies to meme-fueled social marketing to creator-led communities, we harness the same platforms that raised us to launch and grow our stories around the world.</p></section>
-      <section><h2>Not Another Sequel</h2><p>Audiences are tired of endless reboots and watered-down IP. Archway exists to fill the gap the industry keeps ignoring: bold, genre-defying, emotionally intelligent storytelling that knows its worth. We believe originality isn’t just essential, it’s good business.</p></section>
-    </section>
+  </div> <!-- End page-wrapper -->
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Let’s build something bold together.</p>
-      <ul class="icons" style="display: flex; justify-content: center; gap: 1em;">
-        <li><a href="mailto:alyssa@thisisarchway.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-        <li><a href="https://instagram.com/archway.productions" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-      </ul>
-    </section>
+  <script>
+    // Toggle sidebar on hamburger click
+    const hamburger = document.getElementById('hamburger');
+    const pageWrapper = document.getElementById('page-wrapper');
 
-    <!-- Footer -->
-    <div id="footer">
-      <ul class="copyright">
-        <li>&copy; Archway Productions. All rights reserved.</li>
-        <li>The Future Is Not Franchised</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
+    hamburger.addEventListener('click', () => {
+      pageWrapper.classList.toggle('inactive');
+    });
+  </script>
 </body>
-</html>
